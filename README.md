@@ -8,4 +8,4 @@ Evento @Rocketseat Next Level Week Return 8ª Edição - Maio de 2022
 - **SwiperJS**
 - **ScrollReveal**
 
-### [Link para a Página]( "DoctorCare")
+### [Link para a Página](https://luca-merighi.github.io/NLW8-Return-Origin/ "DoctorCare")
