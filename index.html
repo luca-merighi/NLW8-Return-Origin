@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Luca Merighi">
+    <meta name="description" content="Assistência médica simplificada para todos. Os médicos da DoctorCare vão além dos sintomas para tratar a causa raiz de sua doença e proporcionar uma cura a longo prazo.">
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- SwiperJS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/sidebar.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="./styles/services.css">
+    <link rel="stylesheet" href="./styles/testimonials.css">
+    <link rel="stylesheet" href="./styles/about.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    
+    <link rel="shortcut icon" href="./img/icons/doctor.png" type="image/x-icon">
+    <title>DoctorCare</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a 
+            href="#" 
+            class="logo">
+                <img 
+                src="./img/icons/logo.svg" 
+                alt="Logo DoctorCare, com o 'Care' da cor verde">
+            </a>
+
+            <ul class="links">
+                <li>
+                    <a 
+                    href="#home"
+                    aria-label="Link para a seção Início do DoctorCare">
+                        Início
+                    </a>
+                </li>
+                <li>
+                    <a 
+                    href="#services"
+                    aria-label="Link para a seção Serviços do DoctorCare">
+                        Serviços
+                    </a>
+                </li>
+                <li>
+                    <a 
+                    href="#testimonials"
+                    aria-label="Link para a seção Depoimentos do DoctorCare">
+                        Depoimentos
+                    </a>
+                </li>
+                <li>
+                    <a 
+                    href="#about"
+                    aria-label="Link para a seção Sobre o DoctorCare">
+                        Sobre
+                    </a>
+                </li>
+                <li>
+                    <a 
+                    href="#contact"
+                    aria-label="Link para a seção Contatos do DoctorCare">
+                        Contatos
+                    </a>
+                </li>
+            </ul>
+
+            <a 
+            href="https://api.whatsapp.com/send?phone=+5519989103966&text=Olá! Gostaria de agendar uma consulta" 
+            target="_blank"
+            aria-label="Link para agendar uma consulta pelo Whatsapp"
+            class="schedule-button">
+                Agende sua Consulta
+            </a>
+
+            <div class="toggle-sidebar-icons" tabindex="0">
+                <img 
+                src="./img/icons/menu.svg" 
+                alt="Ícone de Menu da cor verde para abrir a Sidebar" 
+                aria-expanded="false"
+                aria-label="Botão Abrir Menu (ou Sidebar)"
+                class="menu-icon">
+
+                <img 
+                src="./img/icons/close.svg" 
+                alt="Ícone de Fechar da cor branca para fechar a Sidebar" 
+                aria-expanded="true"
+                aria-label="Botão Fechar Menu (ou Sidebar)"
+                class="close-icon hide">
+            </div>
+        </nav>
+    </header>
+
+    <div id="sidebar">
+        <div class="container">
+            <ul class="sidebar-links">
+                <li>
+                    <a 
+                    href="#"
+                    aria-label="Link para a seção Início do DoctorCare">
+                        Início
+                    </a>
+                </li>
+                <li>
+                    <a 
+                    href="#services"
+                    aria-label="Link para a seção Serviços do DoctorCare">
+                        Serviços
+                    </a>
+                </li>
+                <li>
+                    <a 
+                    href="#testimonials"
+                    aria-label="Link para a seção Depoimentos do DoctorCare">
+                        Depoimentos
+                    </a>
+                </li>
+                <li>
+                    <a 
+                    href="#about"
+                    aria-label="Link para a seção Sobre o DoctorCare">
+                        Sobre
+                    </a>
+                </li>
+                <li>
+                    <a 
+                    href="#contact"
+                    aria-label="Link para a seção Contatos do DoctorCare">
+                        Contatos
+                    </a>
+                </li>
+                <li>
+                    <a 
+                    href="https://api.whatsapp.com/send?phone=+5519989103966&text=Olá! Gostaria de agendar uma consulta" 
+                    target="_blank"
+                    aria-label="Link para agendar uma consulta pelo Whatsapp"
+                    class="schedule-button">
+                        Agende sua Consulta
+                    </a>
+                </li>
+            </ul>
+    
+            <ul class="social-media-links">
+                <li>
+                    <a 
+                    href="https://www.instagram.com/"
+                    target="_blank">
+                        <img 
+                        src="./img/icons/instagram.svg"
+                        aria-label="Ícone do Instagram branco para redes sociais" 
+                        alt="Ícone do Instagram branco para redes sociais">
+                    </a>
+                </li>
+                <li>
+                    <a 
+                    href="https://www.facebook.com/"
+                    target="_blank">
+                        <img 
+                        src="./img/icons/facebook.svg" 
+                        aria-label="Ícone do Facebook branco para redes sociais" 
+                        alt="Ícone do Facebook branco para redes sociais">
+                    </a>
+                </li>
+                <li>
+                    <a 
+                    href="https://www.youtube.com/"
+                    target="_blank">
+                        <img 
+                        src="./img/icons/youtube.svg" 
+                        aria-label="Ícone do YouTube branco para redes sociais" 
+                        alt="Ícone do YouTube branco para redes sociais">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <section id="home">
+            <div class="container">
+                <div class="text">
+                    <h4>BOAS-VINDAS A DOCTORCARE 👋</h4>
+                    <h1>Assistência médica simplificada para todos</h1>
+                    <p>Os médicos da DoctorCare vão além dos sintomas para tratar a causa raiz de sua doença e proporcionar uma cura a longo prazo.</p>
+                    <a 
+                    href="https://api.whatsapp.com/send?phone=+5519989103966&text=Olá! Gostaria de agendar uma consulta" 
+                    target="_blank"
+                    class="contact-button">
+                        <img 
+                        src="./img/icons/whatsapp.svg"
+                        aria-label="Ícone do Whatsapp branco para agendar uma consulta através do Whatsapp"  
+                        alt="Ícone do Whatsapp branco">
+                        Agende sua consulta
+                    </a>
+                </div>
+                <figure>
+                    <img 
+                    src="./img/doctor-care/client.png" 
+                    alt="Mulher negra sorrindo vestida com um moletom verde">
+                </figure>
+                <div class="stats" tabindex="0">
+                    <div class="stats-card">
+                        <span>+3.500</span>
+                        <p>Pacientes atendidos</p>
+                    </div>
+                    <div class="stats-card">
+                        <span>+15</span>
+                        <p>Especialistas disponíveis</p>
+                    </div>
+                    <div class="stats-card">
+                        <span>+10</span>
+                        <p>Anos no mercado</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <div class="text">
+                    <h4>SERVIÇOS</h4>
+                    <h2>Como podemos ajudá-lo a se sentir melhor?</h2>
+                </div>
+
+                <div class="cards-container">
+                    <div class="card" tabindex="0">
+                        <img 
+                        src="./img/icons/checkmark.svg"
+                        aria-label="Ícone de uma caixa redonda de verificação verde com fundo verde e opacidade reduzida"  
+                        alt="Ícone de uma caixa redonda de verificação verde com fundo verde e opacidade reduzida">
+
+                        <h3>Problemas digestivos</h3>
+                        <p>
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.
+                        </p>
+                    </div>
+                    <div class="card" tabindex="0">
+                        <img 
+                        src="./img/icons/checkmark.svg" 
+                        aria-label="Ícone de uma caixa redonda de verificação verde com fundo verde e opacidade reduzida"  
+                        alt="Ícone de uma caixa redonda de verificação verde com fundo verde e opacidade reduzida">
+
+                        <h3>Saúde Hormonal</h3>
+                        <p>
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.
+                        </p>
+                    </div>
+                    <div class="card" tabindex="0">
+                        <img 
+                        src="./img/icons/checkmark.svg" 
+                        aria-label="Ícone de uma caixa redonda de verificação verde com fundo verde e opacidade reduzida"  
+                        alt="Ícone de uma caixa redonda de verificação verde com fundo verde e opacidade reduzida">
+
+                        <h3>Bem-estar mental</h3>
+                        <p>
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.
+                        </p>
+                    </div>
+                    <div class="card" tabindex="0">
+                        <img 
+                        src="./img/icons/checkmark.svg" 
+                        aria-label="Ícone de uma caixa redonda de verificação verde com fundo verde e opacidade reduzida"  
+                        alt="Ícone de uma caixa redonda de verificação verde com fundo verde e opacidade reduzida">
+
+                        <h3>Cuidados Pediátricos</h3>
+                        <p>
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.
+                        </p>
+                    </div>
+                    <div class="card" tabindex="0">
+                        <img 
+                        src="./img/icons/checkmark.svg" 
+                        aria-label="Ícone de uma caixa redonda de verificação verde com fundo verde e opacidade reduzida"  
+                        alt="Ícone de uma caixa redonda de verificação verde com fundo verde e opacidade reduzida">
+
+                        <h3>Autoimune e Inflamação</h3>
+                        <p>
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.
+                        </p>
+                    </div>
+                    <div class="card" tabindex="0">
+                        <img 
+                        src="./img/icons/checkmark.svg" 
+                        aria-label="Ícone de uma caixa redonda de verificação verde com fundo verde e opacidade reduzida"  
+                        alt="Ícone de uma caixa redonda de verificação verde com fundo verde e opacidade reduzida">
+
+                        <h3>Saúde do Coração</h3>
+                        <p>
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <div class="container">
+                <div class="text">
+                    <h4>DEPOIMENTOS</h4>
+                    <h2>O que os clientes dizem sobre o <span>Doctor<span>Care</span></h2>
+                </div>
+
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <blockquote class="testimonial-card">
+                                <p>
+                                    <span class="quote">
+                                        &ldquo;
+                                    </span>
+                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.
+                                </p>
+
+                                <cite class="user-feedback">
+                                    <img 
+                                    src="./img/doctor-care/woman-1.jpg" 
+                                    alt="Foto do cliente que fez depoimento">
+                                    <span class="user-name">
+                                        Celina Lawson
+                                    </span>
+                                </cite>
+                            </blockquote>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <blockquote class="testimonial-card">
+                                <p>
+                                    <span class="quote">
+                                        &ldquo;
+                                    </span>
+                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.
+                                </p>
+
+                                <cite class="user-feedback">
+                                    <img 
+                                    src="./img/doctor-care/woman-2.jpg" 
+                                    alt="Foto do cliente que fez depoimento">
+                                    <span class="user-name">
+                                        Rhonda Bradley
+                                    </span>
+                                </cite>
+                            </blockquote>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <blockquote tabindex="0" class="testimonial-card">
+                                <p>
+                                    <span class="quote">
+                                        &ldquo;
+                                    </span>
+                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.
+                                </p>
+
+                                <cite class="user-feedback">
+                                    <img 
+                                    src="./img/doctor-care/woman-3.jpg" 
+                                    alt="Foto do cliente que fez depoimento">
+                                    <span class="user-name">
+                                        Marie Martin
+                                    </span>
+                                </cite>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <div tabindex="0" class="swiper-pagination"></div>
+                </div>
+
+                <div class="brands">
+                    <h4>Empresas que confiam no nosso trabalho</h4>
+                    <div class="brands-img">
+                        <img 
+                        src="./img/icons/logo-facebook.svg" 
+                        aria-label="Logo do Facebook da cor verde, uma das empresas que confiam no trabalho do DoctorCare"  
+                        alt="Logo do Facebook da cor verde">
+
+                        <img 
+                        src="./img/icons/logo-google.svg" 
+                        aria-label="Logo da Google da cor verde, uma das empresas que confiam no trabalho do DoctorCare"  
+                        alt="Logo da Google da cor verde">
+
+                        <img 
+                        src="./img/icons/logo-apleona.svg" 
+                        aria-label="Logo do Apleona da cor verde, uma das empresas que confiam no trabalho do DoctorCare"  
+                        alt="Logo da Apleona da cor verde">
+
+                        <img 
+                        src="./img/icons/logo-linkedin.svg" 
+                        aria-label="Logo do LinkedIn da cor verde, uma das empresas que confiam no trabalho do DoctorCare"  
+                        alt="Logo do LinkedIn da cor verde">
+
+                        <img 
+                        src="./img/icons/logo-rocketseat.svg" 
+                        aria-label="Logo da Rocketseat da cor verde, uma das empresas que confiam no trabalho do DoctorCare"  
+                        alt="Logo da Rocketseat da cor verde">
+                    </div>
+                </div>
+
+                <div class="schedule-container">
+                    <h2>
+                        Comece a cuidar de sua saúde agora mesmo
+                    </h2>
+
+                    <a 
+                    href="https://api.whatsapp.com/send?phone=+5519989103966&text=Olá! Gostaria de agendar uma consulta" 
+                    target="_blank"
+                    class="schedule-button">
+                        Agende sua Consulta
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <div tabindex="0" class="text">
+                    <h4>SOBRE NÓS</h4>
+                    <h2>Entenda quem somos e por que existimos!</h2>
+                    <p>
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                    </p>
+                </div>
+                <figure>
+                    <img 
+                    tabindex="0"
+                    src="./img/doctor-care/doctor-client.png" 
+                    alt="Doutor sorrindo segurando uma prancheta e uma mulher com sua filha fazendo uma consulta">
+                </figure>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <div class="text">
+                    <h2>Entre em contato com a gente!</h2>
+                    <ul class="contacts-list">
+                        <li>
+                            <img 
+                            src="./img/icons/map-pin.svg" 
+                            aria-label="Endereço para localização"
+                            alt="Ícone de pino para localização">
+                            R. Amauri Souza, 346
+                        </li>
+                        <li>
+                            <img 
+                            src="./img/icons/email.svg" 
+                            aria-label="E-mail para contato"
+                            alt="Ícone de e-mail para contato">
+                            contato@doctorcare.com
+                        </li>
+                    </ul>
+                    <a 
+                    href="https://api.whatsapp.com/send?phone=+5519989103966&text=Olá! Gostaria de agendar uma consulta" 
+                    target="_blank"
+                    class="schedule-button">
+                        <img 
+                        src="./img/icons/whatsapp.svg" 
+                        aria-label="Link para agendar uma consulta pelo Whatsapp"
+                        alt="Ícone do Whatsapp branco">
+                        Agende sua Consulta
+                    </a>
+                </div>
+                <figure>
+                    <img 
+                    src="./img/doctor-care/client-at-phone.png" 
+                    alt="Homem negro sorrindo usando um celular">
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="text">
+                <a 
+                href="#" 
+                class="logo">
+                    <img 
+                    src="./img/icons/logo.svg"
+                    aria-label="Logo DoctorCare branca" 
+                    alt="Logo DoctorCare branca">
+                </a>
+                <span>
+                    ©2022 DoctorCare.
+                </span>
+                <span>
+                    Todos os direitos reservados.
+                </span>
+            </div>
+            <ul class="social-links">
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img 
+                        src="./img/icons/instagram.svg" 
+                        aria-label="Ícone do Instagram branco para redes sociais"
+                        alt="Ícone do Instagram branco">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://m.facebook.com/" target="_blank">
+                        <img 
+                        src="./img/icons/facebook.svg" 
+                        aria-label="Ícone do Facebook branco para redes sociais"
+                        alt="Ícone do Facebook branco">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://m.youtube.com/" target="_blank">
+                        <img 
+                        src="./img/icons/youtube.svg" 
+                        aria-label="Ícone do YouTube branco para redes sociais"
+                        alt="Ícone do YouTube branco">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <a 
+    href="#" 
+    class="back-to-top-button">
+        <img 
+        src="./img/icons/arrow-up.svg" 
+        aria-label="Ícone de uma seta branca apontando para cima, botão Voltar ao Início da Página"
+        alt="Ícone de uma seta branca apontando para cima">
+    </a>
+
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/sidebar.js"></script>
+
+    <!-- ScrollRevealJS -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./scripts/scroll-reveal.js"></script>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./scripts/swiper.js"></script>
+</body>
+</html>

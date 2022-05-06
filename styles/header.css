@@ -1,0 +1,230 @@
+.header {
+    width: 100%;
+    background-color: var(--light-green);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    border-bottom: 2px solid var(--green-transparent);
+
+    transition: background 0.3s, border 0.3s;
+}
+
+.header.scrolling {
+    background-color: var(--green);
+    border-bottom: 2px solid var(--green-hover-2);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.header .nav {
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .nav .logo {
+    padding: 0.25rem;
+    transition: filter 0.3s;
+}
+
+.header .nav .logo:focus {
+    border-radius: 0.5rem;
+    outline: 2px solid var(--green);
+    background-color: var(--green-transparent-hover-1);
+}
+
+.header .nav .logo.scrolling {
+    filter: brightness(0) invert(2);
+}
+
+.header .nav .links {
+    display: none;
+}
+
+.header .nav .schedule-button {
+    display: none;
+}
+
+.toggle-sidebar-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 0.5rem;
+
+    transition: background 0.3s;
+}
+
+.toggle-sidebar-icons:focus {
+    outline: 2px solid var(--green);
+    background-color: var(--green-transparent-hover-1);
+}
+
+.toggle-sidebar-icons:hover {
+    background-color: var(--green-transparent-hover-1);
+    cursor: pointer;
+}
+
+.header.scrolling .toggle-sidebar-icons:focus {
+    outline: 2px solid var(--white);
+    background-color: var(--green-transparent-hover-1);
+}
+
+.header.scrolling .toggle-sidebar-icons:hover {
+    background-color: var(--green-transparent-hover-2);
+}
+
+.menu-icon,
+.close-icon {
+    position: absolute;
+    transition: filter 0.0s, opacity 0.3s, visibility 0.3s, transform 0.3s;
+}
+
+.menu-icon.scrolling {
+    filter: brightness(0) invert(2);
+}
+
+.close-icon {
+    width: 2.875rem;
+    height: 2.875rem;
+}
+
+.menu-icon.hide,
+.close-icon.hide {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-100%);
+}
+
+@media(max-width: 375px) {
+    .header .nav .links {
+        display: none;
+    }
+
+    .toggle-sidebar-icons {
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+
+    .header .nav .schedule-button {
+        display: none;
+    }
+
+    .menu-icon,
+    .close-icon {
+        width: 2.25rem;
+        height: 2.25rem;
+    }
+}
+
+@media(min-width: 768px) {
+    .header .nav {
+        padding: 1.5rem 3rem;
+    }
+}
+
+@media(min-width: 1024px) {
+    .header .nav .links {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 0.875rem;
+        align-items: center;
+    }
+
+    .header .nav .links li a {
+        text-decoration: none;
+        padding: 0.875rem 1rem;
+        border-radius: 0.5rem;
+
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: var(--green);
+        opacity: 0.75;
+
+        transition: background 0.3s;
+    }
+
+    .header .nav .links li a.active {
+        opacity: 100;
+        background-color: var(--green-transparent-hover-1);
+    }
+
+    .header .nav .links li a:hover {
+        background-color: var(--green-transparent-hover-1);
+    }
+
+    .header .nav .links li a:focus {
+        background-color: var(--green-transparent-hover-1);
+        outline: 2px solid var(--green);
+    }
+
+    .header.scrolling .nav .links li a.active {
+        opacity: 100;
+        background-color: var(--green-transparent-hover-2);
+    }
+
+    .header.scrolling .nav .links li a {
+        color: var(--white);
+    }
+
+    .header.scrolling .nav .links li a:hover {
+        background-color: var(--green-transparent-hover-2);
+        opacity: 100;
+    }
+
+    .header.scrolling .nav .links li a:focus {
+        opacity: 100;
+        outline: 2px solid var(--green-hover-2);
+        background-color: var(--green-transparent-hover-2);
+    }
+
+    .header .nav .schedule-button {
+        display: block;
+        
+        text-decoration: none;
+        color: var(--green);
+        font-weight: 700;
+
+        padding: 0.875rem 1rem;
+        border-radius: 2.5rem;
+        border: 2px solid var(--green);
+
+        transition: background 0.3s, opacity 0.3s;
+    }
+
+    .header .nav .schedule-button:hover {
+        background-color: var(--green-transparent-hover-1);
+        opacity: 0.75;
+    }
+
+    .header .nav .schedule-button:focus {
+        border: 2px solid var(--green-hover-2);
+        outline: none;
+        background-color: var(--green-transparent-hover-1);
+        opacity: 0.75;
+    }
+
+    .header.scrolling .nav .schedule-button {
+        color: var(--white);
+        border: 2px solid var(--white);
+    }
+
+    .header.scrolling .nav .schedule-button:hover {
+        background-color: var(--green-transparent-hover-2);
+        opacity: 100;
+    }
+
+    .header.scrolling .nav .schedule-button:focus {
+        border: 2px solid var(--green-hover-2);
+        opacity: 100;
+        outline: none;
+        background-color: var(--green-transparent-hover-2);
+    }
+
+    .toggle-sidebar-icons {
+        display: none;
+    }
+}

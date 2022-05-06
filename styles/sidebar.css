@@ -1,0 +1,144 @@
+#sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 5;
+
+    opacity: 0;
+    visibility: hidden;
+
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    transform: translateX(100%);
+    transition: 0.3s;
+}
+
+#sidebar.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0%);
+}
+
+#sidebar .container {
+    width: 75%;
+    height: 100%;
+
+    background-color: var(--green);
+    border-left: 2px solid var(--green-hover-2);
+
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: -100px 50px 200px rgb(118 118 118 / 50%);
+}
+
+#sidebar .container .sidebar-links {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+}
+
+#sidebar .container .sidebar-links li a {
+    text-decoration: none;
+
+    padding: 0.875rem 1.25rem;
+    border-radius: 0.5rem;
+
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--white);
+
+    transition: background 0.3s;
+}
+
+#sidebar .container .sidebar-links li a:hover {
+    background-color: var(--green-transparent-hover-2);
+}
+
+#sidebar .container .sidebar-links li a:focus {
+    outline: 2px solid var(--white);
+    background-color: var(--green-transparent-hover-2);
+}
+
+#sidebar .container .sidebar-links li a.schedule-button {
+    background-color: var(--white);
+    padding: 0.875rem 2rem;
+    border-radius: 2.5rem;
+    font-size: 1.5rem;
+    width: fit-content;
+
+    color: var(--green);
+    text-transform: uppercase;
+}
+
+#sidebar .container .sidebar-links li a.schedule-button:hover {
+    background-color: var(--light-green);
+}
+
+#sidebar .container .sidebar-links li a.schedule-button:focus {
+    background-color: var(--light-green);
+    outline: 2px solid var(--green-hover-2);
+}
+
+#sidebar .container .social-media-links {
+    list-style: none;
+
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+#sidebar .container .social-media-links li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+
+    transition: background 0.3s;
+}
+
+#sidebar .container .social-media-links li a:hover {
+    background-color: var(--green-transparent-hover-2);
+}
+
+#sidebar .container .social-media-links li a:focus {
+    outline: 2px solid var(--white);
+    background-color: var(--green-transparent-hover-2);
+}
+
+#sidebar .container .social-media-links li a img {
+    width: 2.5rem;
+}
+
+@media(max-width: 375px) {
+    #sidebar .container .sidebar-links li a {
+        font-size: 1.5rem;
+    }
+
+    #sidebar .container .sidebar-links li a.schedule-button {
+        padding: 0.875rem 1rem;
+        font-size: 1.25rem;
+    }
+
+    #sidebar .container .social-media-links li a img {
+        width: 2rem;
+    }
+}
+
+@media(min-width: 1024px) {
+    #sidebar {
+        display: none;
+    }
+}
